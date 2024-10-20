@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Product</title>
+    <link rel="stylesheet" href="addProduct.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add/Edit Product</h1>
+        <input type="hidden" id="editId">
+        <input type="text" id="productName" placeholder="Product Name" required>
+        <input type="number" id="productPrice" placeholder="Product Price" required>
+        <input type="number" id="productStock" placeholder="Product Stock" required>
+        <button onclick="addOrUpdateProduct()">Save</button>
+       
+        <p id="productMessage"></p>
+        <p><a href="inventory.html">Back to Inventory List</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

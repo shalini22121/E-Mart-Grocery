@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Sale</title>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Make a Sale</h1>
+        <div>
+            <label for="saleProductName">Product Name:</label>
+            <input type="text" id="saleProductName" required>
+            <label for="saleQuantity">Quantity:</label>
+            <input type="number" id="saleQuantity" required>
+            <button onclick="makeSale()">Sell</button>
+        </div>
+        <div id="saleMessage"></div>
+    </div>
+    <p><a href="inventory.html">Back to Inventory List</a></p>
+    <script src="script.js"></script>
+</body>
+</html>

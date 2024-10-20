@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="centered-section">
+        <!-- Your form or profile content goes here -->
+        <h2>Login</h2>
+        <form>
+            <!-- Form fields -->
+        </form>
+    </div>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="Add/Edit Product"> <i class=""fas fa-plus ></i>Add/Edit Product</a></li>
+                <li><a href="sales.html"><i class="fas fa-shopping-cart"></i> Make a Sale</a></li>
+                <li><a href="inventory.html"><i class="fas fa-box"></i> Inventory</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+               
+            </ul>
+        </nav>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <img id="profileImage" alt="Profile Image" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h2 id="profileUsername">Username</h2>
+            <p id="profileEmail">Email: user@example.com</p>
+            <p id="profileAge">Age: 0</p> <!-- Add Age field -->
+            <button onclick="logout()">Logout</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

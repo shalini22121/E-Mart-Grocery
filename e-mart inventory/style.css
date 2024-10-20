@@ -1,0 +1,190 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Changed to 0 for proper layout */
+    padding: 0;
+    background-image: url('images/inen.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: #121212;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-position: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #007bff; /* Navbar background color */
+    overflow: hidden;
+    margin-bottom: 20px; /* Space below navbar */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.navbar ul li {
+    display: inline; /* Ensure items are inline */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Headings */
+h1 {
+    color: #FF6347; /* Tomato */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #e32ea9; /* Steel blue */
+}
+
+/* Input, Select, and Button Styles */
+input, select, button {
+    display: block;
+    width: calc(100% - 22px); /* Full width with padding */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #504d4d;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    border-color: #FF6347; /* Tomato */
+    outline: none; /* Remove outline */
+}
+
+button {
+    background-color: #1E90FF; /* Dodger blue */
+    color: rgb(28, 27, 27);
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #b4e1ef; /* Deep sky blue */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #32CD32; /* Lime green */
+    color: white;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid #090707;
+    padding: 8px;
+    text-align: center;
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+td:hover {
+    background-color: #FFD700; /* Gold */
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #FFA500; /* Orange */
+    color: black;
+}
+
+.edit-btn:hover {
+    background-color: #FF8C00; /* Dark orange */
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #FF4500; /* Orange red */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #B22222; /* Firebrick */
+}
+
+/* Link Styles */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #1E90FF; /* Dodger blue */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FF6347; /* Tomato */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    input, select, button {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust based on how many products per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #090707; /* Added border with color */
+}
+
+.product-card h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #666;
+}
+
